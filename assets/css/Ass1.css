@@ -1,0 +1,1245 @@
+/*------------------------------------------ Menu CSS ---------------------------------- */
+
+.navbar-brand{
+    width: 180px;
+    height: 60px;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+#logoimg1{
+    width: 190px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+#main-items-list i{
+    padding-left: 20px;
+    padding-right: 15px;
+    font-size: 25px;
+}
+
+#menuSearch{
+    width: 70%;
+    height: 40px;
+    border: 1px solid #E1C16E;
+    position: relative;
+    float: right;
+    top: 10px;
+    margin: 0 15px 0 0px;
+    padding-right: 10px;
+    outline: none;
+}
+
+#searchIcon{
+    position: relative;
+    float: left;
+    width: 20%;
+}
+
+
+@media (min-width:1157px){
+    .bi-list{
+        display: none;
+    }
+    .mainlist{
+        position: absolute;
+        display: block;
+        float: right;
+        left: 230px;
+        top: 4px;
+        margin: 0;
+        padding: 0;
+        height: 30px;
+        background-color: red;
+
+    }
+    .mainlist li{
+        display: inline-block;
+        margin: 3px;
+    }
+    .mainlist li a{
+        padding: 5px;
+        height: 50px;
+        color: #E1C16E;
+        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    .mainlist i{
+        padding-right: 5px;
+        font-size: 20px;
+    }
+    .gn-menu-main .gn-trigger a {
+        display: none;
+    }
+    .gn-menu-wrapper,
+    .gn-scroller{
+        display: none;
+    }
+}
+
+@media (max-width:1157px){
+    .mainlist{
+        display: none;
+    }
+    .gn-menu-main .gn-trigger a {
+        display: block;
+    }
+}
+
+/* Icomoon.com */
+#menucontainer{
+position: absolute;
+top: 0;
+left: 0;
+z-index: 10;
+}
+
+.gn-menu-main,
+.gn-menu-main ul {
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: #E1C16E;
+    list-style: none;
+    text-transform: none;
+    font-weight: 300;
+    font-family: 'Lato', Arial, sans-serif;
+    line-height: 60px;
+}
+.gn-menu-main {
+    box-shadow: 10px 0px 10px 5px grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    margin: 0;
+    padding: 0;
+    transition: top 0.35s ease-in-out;
+}
+.gn-menu-main .gn-trigger a {
+    height: 100%;
+    color: #E1C16E;
+    text-decoration: none;
+    cursor: pointer;
+}
+.gn-menu-main a:hover{
+    background: #E1C16E;
+    color: white;
+}
+
+/* icon-only trigger (menu item) */
+.gn-menu-main li.gn-trigger {
+    display: block;
+    position: fixed;
+    height: 50px;
+    width: 60px;
+    float: right;
+    right: -5px;
+    top:14px;
+    text-align: center;
+}
+
+.gn-menu-wrapper {
+    position: fixed;
+    top: 65px;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 60px;
+    border-top: 1px solid #E1C16E;
+    background: white;
+    -webkit-transform: translateX(-60px);
+    -moz-transform: translateX(-60px);
+    transform: translateX(-60px);
+    -webkit-transition: -webkit-transform 0.3s, width 0.3s;
+    -moz-transition: -moz-transform 0.3s, width 0.3s;
+    transition: transform 0.3s, width 0.3s;
+}
+.gn-scroller {
+    position: absolute;
+    overflow-y: scroll;
+    width: 270px;
+    height: 100%;
+}
+.gn-menu {
+    text-align: left;
+    font-size: 18px;
+}
+.bi-list::before {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    text-transform: none;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-family: 'ecoicons';
+    line-height: 1;
+    speak-as: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+.bi-list::before {
+    margin-left: 0px;
+    vertical-align: 3px;
+    width: 30px;
+    height: 2px;
+    background: #E1C16E;
+    box-shadow: 0 3px white, 0 -6px #E1C16E, 0 -9px white, 0 -12px #E1C16E;
+    content: '';
+}
+.bi-list:hover::before{
+    background: white;
+    box-shadow: 0 3px #E1C16E, 0 -6px white, 0 -9px #E1C16E, 0 -12px white;
+}
+/* styles for opening menu */
+.gn-menu-wrapper.gn-open-all,
+.gn-menu-wrapper.gn-open-part {
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+.gn-menu-wrapper.gn-open-all {
+    width: 240px
+}
+@media screen and (max-width: 422px) { 
+.gn-menu-wrapper.gn-open-all {
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        transform: translateX(0px);
+        width: 100%;
+}
+
+.gn-menu-wrapper.gn-open-all .gn-scroller {
+        width: 100%
+    }
+}
+/* ------------------------------------- Menu Css Ends------------------------------------- */
+
+/*----------------------------------------- Carouser CSS -----------------------------------*/
+section.carousel {
+    height: 90.4vh;
+}
+
+#carousel{
+    height: 100%;
+    position: relative;
+    top: 60px;
+    z-index: 3;
+    overflow: hidden;
+}
+#carousel .carousel-item{
+    height: 100%;
+}
+
+#carousel .carousel-item img{
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption:hover{
+    animation: heartBeat;
+    animation-duration: 2s;
+}
+/*---------------------------------- Carouser CSS Ends -----------------------------------*/
+
+/* ---------------------------------- Description ------------------------------------- */
+@media (min-width:1000px) {
+    #Description{
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+    .Description{
+        height: 100%;
+    }
+}
+
+.Description{
+    padding: 8rem 0 2rem 0;
+    /* background image */
+    background: url("../img/beforeimg1.jpg");
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.Description:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.slider-Desc {
+  position: relative;
+}
+
+/* Carousel 4*/
+.testimony-29101 .image {
+  width: 40%;
+  background-size: cover;
+  background-position: center center; 
+}
+  @media (max-width: 991.98px) {
+    .testimony-29101 .image
+    {
+      height: 300px; 
+    }
+}
+
+.testimony-29101 .text {
+  width: 60%;
+  padding: 4rem 4rem;
+  background: #1a1814; 
+}
+.testimony-29101 .text blockquote p {
+  color: #E1C16E;
+  line-height: 1.8;
+  font-size: 20px; 
+}
+
+@media (max-width: 991.98px) {
+  .testimony-29101 .image, .testimony-29101 .text
+  {
+    width: 100%;
+    display: block !important; 
+  } 
+}
+
+.slide-one-item {
+  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1); 
+}
+
+.thumbnail {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateY(50%) translateX(-50%);
+  -ms-transform: translateY(50%) translateX(-50%);
+  transform: translateY(50%) translateX(-50%);
+  z-index: 2;
+}
+.thumbnail li {
+  display: inline-block;
+}
+.thumbnail li a {
+  display: block;
+  margin: 4px;
+}
+.thumbnail li a img {
+  width: 50px;
+  border-radius: 100%;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: 1s all ease;
+  -o-transition: 1s all ease;
+  transition: 1s all ease;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.thumbnail li.active a img {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* --------------------------Description---------Css----------Ends----------------------- */
+
+/* -------------------------- Products CSS -------------------------------------------- */
+
+.ftco-section{
+    margin-bottom: 20px;
+}
+
+.section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: rgba(94, 94, 94, 0.2) !important;
+    margin: 4px 10px;
+  }
+
+.product{
+    overflow: hidden;
+    position: relative;
+    width: 365px;
+    height: 400px;
+    margin: 50px auto;
+    padding: 0;
+}
+  
+.product .img{
+    position: relative;
+    width: 365px;
+    height: 400px;
+}
+  
+.product .img img{
+    position: relative;
+    width: 365px;
+    height: 400px;
+}
+  
+.product .product-content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+  
+.product:hover .product-content{
+    opacity: 1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 212, 255, 0) 100%);
+}
+  
+.product .product-content .product-info{
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    transition: bottom 0.3s ease-in-out;
+}
+
+.product .product-content .product-info h4{
+    color: white;
+}
+
+.product .product-content .product-info i{
+    color: #E1C16E;
+}
+
+.product:hover .product-content .product-info{
+    bottom: 30px;
+}
+  
+.product .product-content .product-info span i:hover{
+    cursor: pointer;
+    color: gold;
+}
+  
+.product .product-icon-left{
+    position: absolute;
+    bottom: 50px;
+    left: -60px;
+    font-size: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    transition: left 0.3s ease-in-out;
+    background-color: #E1C16E;
+}
+  
+.product .product-icon-right{
+    position: absolute;
+    bottom: 50px;
+    right: -60px;
+    font-size: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    transition: right 0.3s ease-in-out;
+    background-color: #E1C16E;
+}
+
+.product .product-icon-left i,
+.product .product-icon-right i{
+    color: white;
+}
+  
+.product:hover .product-icon-left{
+    left: 0;
+}
+.product:hover .product-icon-right{
+    right: 0;
+}
+  
+.ftco-section .container {
+    overflow: hidden;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (max-width: 400px) {
+    .ftco-section .container {
+        max-width: 370px;
+    }
+}
+@media (max-width: 768px) {
+    .ftco-section .container {
+      max-width: 740px;
+    }
+}
+@media (max-width: 1150px) {
+    .ftco-section .container {
+      max-width: 1110px;
+    }
+}
+@media (max-width: 100vw) {
+    .ftco-section .container {
+      max-width: 92vw;
+    }
+}
+  
+.ftco-section .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+  
+.ftco-section .all-items{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+  
+.ftco-section .owl-carousel .owl-dots {
+    text-align: center;
+    margin-top: 0 20px 0 0;
+    padding-bottom: 10px;
+} 
+.ftco-section .owl-carousel .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.ftco-section .owl-carousel .owl-dots .owl-dot:hover, .owl-carousel .owl-dots .owl-dot:focus {
+    outline: none !important;
+}
+.ftco-section .owl-carousel .owl-dots .owl-dot.active {
+    background: #E1C16E;
+}
+/* ---------------- Products -------------- CSS ------------ Ends -------------------  */
+
+/* --------------------------- Special Offers Css Start -------------------------------*/
+
+@media (min-width:1000px){
+    .specials{
+        padding-left: 40px;
+    }
+    .specials .tab-content .cont-img img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width:1000px){
+    .specials .nav-link{
+        border-right: none !important;
+    }
+    #specials .tab-content .cont-img img{
+        margin-top: 30px;
+        width: 60%;
+        height: 100%;
+    }
+}
+
+.specials{
+    background-color: #000000;
+}
+
+.specials .nav-tabs{
+    border: 0;
+}
+
+.specials .tab-pane.active {
+    animation: fadeIn 0.35s ease-in-out;
+}
+
+.specials .nav-link{
+    color: #E1C16E;
+    border-radius: 0;
+    transition: 0.35s ease-in-out;
+    border-right: 2px solid #E1C16E;
+}
+
+.specials .nav-link:hover {
+    color: #E1C16E;
+}
+  .specials .nav-link.active {
+    color: #1a1814;
+    background: #E1C16E;
+    border-color: #E1C16E;
+}
+  .specials .nav-link:hover {
+    border-color: #E1C16E;
+}
+
+.specials .cont-des h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.specials .cont-des p{
+    color: rgb(201, 199, 199);
+}
+/* ---------------------- Special Offers --------- Css ----------------- Ends --------------- */
+
+/*----------------------------------------- Testimonials ------------------------------------*/
+@media (min-width:1000px) {
+    #testimonials{
+        height: 91vh;
+        padding: 0;
+        margin: 0;
+    }
+    .testimonials-div{
+        height: 100%;
+    }
+}
+.testimonials .testimonials-carousel, .testimonials .testimonials-slider {
+    overflow: hidden;
+  }
+  .testimonials .testimonial-item {
+    box-sizing: content-box;
+    min-height: 320px;
+  }
+  .testimonials .testimonial-item .testimonial-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    margin: -40px 0 0 40px;
+    position: relative;
+    z-index: 2;
+    border: 4px solid #E1C16E;
+  }
+  .testimonials .testimonial-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 45px;
+    color: white;
+  }
+  .testimonials .testimonial-item h4 {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 0 0 45px;
+  }
+  .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+    color: #E1C16E;
+    font-size: 26px;
+  }
+  .testimonials .testimonial-item .quote-icon-left {
+    display: inline-block;
+    left: -5px;
+    position: relative;
+  }
+  .testimonials .testimonial-item .quote-icon-right {
+    display: inline-block;
+    right: -5px;
+    position: relative;
+    top: 10px;
+  }
+  .testimonials .testimonial-item p {
+    font-style: italic;
+    margin: 0 15px 0 15px;
+    padding: 20px 20px 60px 20px;
+    background: #1a1814;
+    color: #E1C16E;
+    position: relative;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+  }
+  .testimonials .swiper-pagination {
+    margin-top: 30px;
+    position: relative;
+  }
+  .testimonials .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.4);
+    opacity: 1;
+  }
+  .testimonials .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #cda45e;
+}
+#testimonials{
+    background: url("../img/gal6.jpg");
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    background-attachment: fixed;
+}
+
+#testimonials:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+/* ------------------ Testimonials ------------ Css-------------Ends---------------------------- */
+
+/* ------------------------------------- Our Work Css --------------------------------------*/
+
+#OurWork{
+    position: relative;
+    z-index: 2;
+}
+
+.container1{
+    height: 290px;
+    z-index: 2;
+    overflow: hidden;
+    box-shadow: 5px 5px 18px grey;
+}
+
+.container1:hover{
+    box-shadow: 5px 15px 18px grey;
+}
+
+.container1 .imga{
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container1 .imga .cont1img1{
+    width: 143%;
+    height: 102%;
+    position: relative;
+    left: -83px;
+    top: 0px;
+    opacity: 1;
+    transition: left 0.35s, filter 0.35s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.container1 .imga .cont1img1:hover{
+    position: relative;
+    left: -56px;
+    filter: brightness(70%);
+    
+}
+/* ----------------------- Our Work ------- CSS ---------------- Ends -------------------------------- */
+
+/*-------------------------------------- Gallery ------------------------------------------*/
+.gallery .gallery-item {
+    overflow: hidden;
+    border-right: 3px solid #454035;
+    border-bottom: 3px solid #454035;
+  }
+  .gallery .gallery-item img {
+    transition: all ease-in-out 0.4s;
+  }
+  .gallery .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+/* ----------------------- Gallery ------- CSS ---------------- Ends -------------------------------- */
+
+/* ------------------------------- Social Icon Css ---------------------------------*/
+
+#SocialLinks{
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+}
+
+@media (min-width:700px){
+    #SocialLinks .btn{
+        margin: 25px;
+    }
+}
+
+@media (max-width:700px){
+    #SocialLinks .btn{
+        margin: 10px;
+    }
+}
+
+
+#SocialLinks a{
+    margin: 30px;
+}
+
+#SocialLinks .btn{
+    display: inline-block;
+    background-color: rgb(255, 251, 251);
+    width: 60px;
+    height: 60px;
+    line-height: 40px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000022;
+    cursor: pointer;
+}
+
+#SocialLinks .btn ion-icon{
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+#SocialLinks .btn ion-icon {
+    color: var(--color);
+}
+
+#SocialLinks .btn:before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background-color: var(--color);
+    transform: rotate(45deg);
+}
+
+#SocialLinks .btn:before {
+    top: 90%;
+    left: -110%;
+}
+
+#SocialLinks .btn:hover:before {
+    top: -10%;
+    left: -10%;
+}
+
+#SocialLinks .btn:hover ion-icon {
+    color: #fff;
+    transform: scale(1.3);
+}
+
+#SocialLinks .btn,
+#SocialLinks .btn:before,
+#SocialLinks .btn ion-icon {
+    transition: all 0.5s;
+    transition-timing-function: 
+      cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+/* -------------------- Social Icon -------- CSS -------- Ends -------------------------------*/
+
+/*---------------------------------- Footer CSS --------------------------------------*/
+#Footer{
+    position: relative;
+    z-index: 2;
+    background-color:black;
+    color: #E1C16E;
+}
+.footerlogo{
+    position: relative;
+    float: left;
+    font-size: 15px;
+}
+.footerlinks{
+    position: relative;
+    float: right;
+}
+.footerlinks li{
+    list-style: none;
+    padding-top: 5px;
+}
+.footerlinks li i{
+    color: #E1C16E;
+}
+.footerlinks li a{
+    padding: 2px;
+    height: 30px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    align-items: center;
+}
+.footerpara p{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+/*-------------------- Footer -------------- CSS ------- Ends -----------------------------------*/
+
+/* ------------------------------------- Side Icons Css----------------------------------------- */
+@media (max-width:980px) {
+    .SideIcons{
+        display: none;
+    }
+    
+}
+.SideIcons{
+    width: 50px;
+    height: 270px;
+    position: fixed;
+    top: 180px;
+    z-index: 3;
+}
+
+.SideIcons .btn1{
+    display: inline-block;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    margin: 10px 0px 0px 5px;
+    border-radius: 10px;
+    position: relative;
+    line-height: 38px;
+    z-index: 0;
+}
+
+.SideIcons .btn1 ion-icon{
+    font-size: 30px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.SideIcons .btn1 ion-icon {
+    color: var(--color);
+}
+
+/* bg before  */
+
+.SideIcons .btn1::before{
+    top: 0;
+    display: none;
+    width: 92px;
+    height: 40px;
+    border-radius: 0 10px 10px 0px;
+    font-size: large;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    padding-left: 6px;
+    z-index: -1;
+}
+
+.SideIcons #btn1::before{
+    content: "Facebook";
+    position: absolute;
+    background-color: #4267B2;
+}
+
+.SideIcons #btn2::before{
+    content: "Twitter";
+    position: absolute;
+    background-color: #3CF;
+}
+
+.SideIcons #btn3::before{
+    content: "Youtube";
+    position: absolute;
+    background-color: #f83117;
+}
+
+.SideIcons #btn4::before{
+    content: "Github";
+    position: absolute;
+    background-color: #333;
+}
+
+.SideIcons #btn5::before{
+    content: "Linkedin";
+    position: absolute;
+    background-color: #0e76a8;
+}
+
+.SideIcons .btn1:hover::before{
+    display: block;
+    animation-name: example;
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes example {
+    from{
+        margin-left: 15px;
+    }
+    to{
+        margin-left: 33px;
+    }
+}
+
+.SideIcons .btn1 .btnD1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.SideIcons .btn1 .btnD2::before {
+    content: '';
+    position: absolute;
+    width: 160%;
+    height: 160%;
+    background-color: var(--color);
+    transform: rotate(55deg);
+}
+ 
+.SideIcons .btn1 .btnD2:before {
+    top: 105%;
+    left: 0%;
+}
+
+.SideIcons .btn1 .btnD2:hover:before
+ {
+    top: 0%;
+    left: 0%;
+}
+
+.SideIcons .btn1 .btnD2:hover ion-icon {
+    color: #fff;
+    transform: scale(0.7);
+}
+
+.SideIcons .btn1,
+.SideIcons .btn1:before,
+.SideIcons .btn1 ion-icon {
+    transition: all 0.35s;
+    transition-timing-function: 
+      cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+/* ------------------------ Side Icons -------------- Css -------------- Ends ----------------- */
+
+/*------------------------------------ Move Up ------------------------------------------*/
+.moveup a{
+    position: fixed;
+    bottom: 10px;
+    left: 1%;
+    z-index: 20;
+    font-size: 30px;
+    color: #cda45e;
+    width: 50px;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* --------------------- Move Up ----------------- CSS------------- Ends ----------------- */
+
+/* --------------------------------------Login form CSS-------------------------------------- */
+.logindiv{
+    position: fixed;
+    bottom: 20px;
+    right: 5px;
+    z-index: 20;
+}
+
+.center button{
+    
+    padding: 8px 20px;
+    border: none;
+    background: #E1C16E;
+    color: white;
+    cursor: pointer;
+    margin: 0;
+    border-radius: 12px;
+    float: right;
+}
+
+.center button:hover{
+    background-color: #d8ac3c;
+    color: white;
+}
+
+/* popup css */
+
+.popup{
+    position: fixed;
+    display: none;
+    top: 60%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background: #E1C16E;
+    box-shadow: 2px 2px 5px 0px #E1C16E;
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+}
+
+.popup.active:hover .form-element a{
+    color: rgb(0, 109, 252);
+}
+
+.popup.active{
+    top:55%;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+    opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+}
+.popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background: #E1C16E;
+    color: #eee;
+    text-align: center;
+    line-height: 21px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.popup .form h2{
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+.popup .form .form-element{
+    margin: 15px 0px;
+}
+.popup .form .form-element label{
+    font-size: 18px;
+    color: #222;
+}
+.popup .form .form-element input[type='text'],
+.popup .form .form-element input[type='password']{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.popup .form .form-element input[type='check']
+{
+    margin-right: 5px;
+}
+.popup .form .form-element button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #222;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.popup .form .form-element a {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* --------------------- Login form ----------------- CSS------------- Ends ----------------- */
+
+/*------------------------------------ Sections General -----------------------------------*/
+  #gallery {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-bg {
+    background-color: #1a1814;
+  }
+  
+  .section-title {
+    padding-bottom: 40px;
+  }
+  .section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+  }
+  .section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 4px 10px;
+  }
+  .section-title p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: #E1C16E;
+}
+/*-------------- Section General ----------- Css --------- Ends ------------------------ */
+
+
+/*------------------------------------------ Preloader ------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: rgb(189, 189, 189);
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #1a1814;
+  border-top-color: #cda45e;
+  border-bottom-color: #cda45e;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
